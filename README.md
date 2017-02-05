@@ -1,6 +1,6 @@
 # notti
 
-[![npm package](https://img.shields.io/badge/npm-v0.0.4-lightgray.svg)](https://www.npmjs.com/package/notti)
+[![npm package](https://img.shields.io/badge/npm-v0.0.5-lightgray.svg)](https://www.npmjs.com/package/notti)
 
 > Don't make me think - Dead simple user notification.
 
@@ -21,7 +21,7 @@
 #### Install
 
 Npm: `npm install notti` </br>
-CDN: `https://unpkg.com/notti@0.0.4`
+CDN: `https://unpkg.com/notti@0.0.5`
 
 
 #### The Gist:
