@@ -1,12 +1,14 @@
 {
   "name": "notti",
-  "version": "0.0.3",
-  "description": "User notifications made simple.",
+  "version": "0.0.4",
+  "description": "Don't make me think - Dead simple user notification.",
   "main": "dist/notti.min.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build":"grunt",
+    "deploy": "surge ./website -d notti.surge.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Luis Vinicius",
