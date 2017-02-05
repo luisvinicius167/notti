@@ -7,13 +7,13 @@
 ---
 
 <p align="center">
-  <img src="https://cdn.rawgit.com/luisvinicius167/notti/master/img/nottijs.gif" width="400"/>
+  <img src="https://cdn.rawgit.com/luisvinicius167/notti/master/img/notti.gif" width="400"/>
 </p>
 
 [notti Website ➞](https://notti.surge.sh/)
 
 ## Why should you use notti?
- * Tiny size: 1.9kb
+ * Tiny size: 2.2kb
  * No external CSS dependency
  * No jQuery dependency
  * Fully customizable
