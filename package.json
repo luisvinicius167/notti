@@ -1,0 +1,23 @@
+{
+  "name": "notti",
+  "version": "0.0.3",
+  "description": "User notifications made simple.",
+  "main": "dist/notti.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Vinicius",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015-script": "^1.1.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "time-grunt": "^1.4.0"
+  }
+}
