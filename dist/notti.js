@@ -19,7 +19,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     define([], factory);
   } else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') {
     module.exports = {
-      notti: factory
+      notti: factory.notti
     };
   } else {
     root.notti = factory;
@@ -71,7 +71,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       div.style.right = '10px';
     }
 
-    if (typeof data === 'string' || data.hideOnClick) {
+    if (typeof data === 'string' || data.hideOnClick !== undefined) {
       div.addEventListener('click', function (e) {
         div.style.transitionDuration = '500ms';
         div.style.transitionTimingFunction = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)';
@@ -88,7 +88,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       });
     }
 
-    if (typeof data === 'string' || data.autoHide) {
+    if (typeof data === 'string' || data.autoHide !== undefined) {
       setTimeout(function () {
         div.style.transitionDuration = '500ms';
         div.style.transitionTimingFunction = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)';
@@ -112,6 +112,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     document.body.appendChild(div);
   };
-  return notti;
+  return { notti: notti };
 }(this));
 //# sourceMappingURL=notti.js.map

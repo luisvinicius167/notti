@@ -15,7 +15,7 @@
     define([], factory)
   } else if (typeof exports === 'object') {
     module.exports = {
-      notti: factory
+      notti: factory.notti
     }
   } else {
     root.notti = factory
@@ -67,7 +67,7 @@
       div.style.right = '10px'
     }
 
-    if (typeof data === 'string' || data.hideOnClick) {
+    if (typeof data === 'string' || data.hideOnClick !== undefined) {
       div.addEventListener('click', (e) => {
         div.style.transitionDuration = '500ms'
         div.style.transitionTimingFunction = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
@@ -82,8 +82,8 @@
       })
     }
 
-    if (typeof data === 'string' || data.autoHide) {
-      setTimeout(() => {
+    if (typeof data === 'string' || data.autoHide !== undefined) {
+      setTimeout( () => {
         div.style.transitionDuration = '500ms'
         div.style.transitionTimingFunction = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
         div.style.opacity = '0.5'
@@ -106,5 +106,5 @@
     }
     document.body.appendChild(div)
   }
-  return notti
+  return {notti}
 }(this)));

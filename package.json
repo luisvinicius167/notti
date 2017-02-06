@@ -1,6 +1,6 @@
 {
   "name": "notti",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Don't make me think - Dead simple user notification.",
   "main": "dist/notti.min.js",
   "directories": {
